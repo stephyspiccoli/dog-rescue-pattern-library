@@ -19,4 +19,4 @@ colors:
     The neutral colors are to blend and combine the two bold colors together
 ---
 
-The Loyal Rescue is an amazing adoption website that help puppies find a wonderful home again.
+The Loyal Rescue is an amazing adoption website that help puppies find a wonderful home again. With an amazing rescue
