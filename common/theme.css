@@ -11,6 +11,7 @@
 
 html {
   font-family: var(--font-primary);
+  color: var(--color-regular);
 }
 
 h1, h2, h3 {
@@ -23,17 +24,11 @@ h4, h5, h6 {
   font-family: var(--font-secondary);
 }
 
-ul, ol, dl {
-  color: var(--color-regular);
-  font-family: var(--font-primary);
-}
-
 a {
   color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
 
 em, strong, del, ins, abbr, dfn, i, b, mark, q, s, u {
-  color: var(--color-regular);
   font-family: var(--font-secondary);
 }
