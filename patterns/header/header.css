@@ -1,0 +1,4 @@
+nav a{
+  transition-duration: .75s;
+  transition-timing-function: linear;
+}

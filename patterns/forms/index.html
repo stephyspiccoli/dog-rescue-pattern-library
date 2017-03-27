@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
+</head>
+<body>
+
+  <body class="pad-t-1-2 gutter-1-4">
+    <form class="form island-1-2 gutter-1-2" method="POST" novalidate>
+
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+          <span class="icon-label"> There are items that require your attention</span>
+        </h3>
+      </div>
+
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 ib push">
+            <label for="name">Name</label>
+            <input id="name" name="name" required aria-describedby="name-error">
+            <p class="error-message milli island-1-4 push-0" id="email-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1 l-1-2 ib push">
+            <label for="Options">Multiple Questions</label>
+            <select id="Options" name="Options">
+              <option>Option 1</option>
+              <option>Option 2</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="email-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a properly formatted email address</span>
+            </p>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 block">
+            <label for="address">Address</label>
+            <textarea id="address" name="Address" required aria-describedby="address-error"></textarea>
+
+            <div class="unit xs-1 s-1 m-1 l-1 xl-1 ib push">
+              <label for="email">Email</label>
+              <input id="email" name="email" placeholder="me@me.com"></input>
+            </div>
+          </div>
+        </div>
+
+
+          <legend>Radio Button</legend>
+          <input type="radio" id="yes" name="option" required aria-describedby="button-error"></input>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="option" required aria-describedby="button-error"></input>
+          <label for="no">No</label>
+
+      <div class="pad-t-1-2">
+        <button class="btn" type="submit">Send</button>
+      </div>
+    </form>
+
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+</body>
+</html>
