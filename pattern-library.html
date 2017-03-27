@@ -53,6 +53,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#banner">Banner</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#footer">Footer</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#header">Header</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#sections">Sections</a></li>
@@ -622,6 +623,10 @@
         </div>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The banner appears after the navigation and it will contain a call to action button where users can imediately go to the adoptions page on the website. The banner will contain a picture as a background with an overlay.</p>
+</div>
+    </div>
 
   
 
@@ -781,6 +786,61 @@
 
 </section>
 
+        <section class="pattern" id="footer">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Footer</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/footer/footer.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The footer contain copyrights information and will have a white background to represent the end of the website.</p>
+</div>
+    </div>
+
+  
+
+    <div class="pattern-details" id="footer-footer">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/footer/footer.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;footer id="footer" role="contentinfo"&gt;
+  &lt;div class="wrapper island-1-2">
+    &lt;p class="text-center">Stephanie Piccoli Designs &#xA9; &lt;i>Loyal Rescue&lt;/i>, 1936&lt;/p>
+  &lt;/div>
+&lt;/footer>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
         <section class="pattern" id="forms">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Forms</h2>
@@ -793,6 +853,15 @@
         </div>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The form is created for the user to fill out important information in order to adopt a puppy:</p>
+<ul>
+<li>The form contains multiple question boxes, fill out boxes and radio buttons.</li>
+<li>Parts such as email me have an example of how it should look like to help the user when filling out the form.</li>
+</ul>
+<p>Feel free to mix the colours for the radio buttons and the borders of the boxes.</p>
+</div>
+    </div>
 
   
 
@@ -819,7 +888,57 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>
+              <code><pre>&lt;form class="form island-1-2 gutter-1-2" method="POST" novalidate=""&gt;
+
+  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+    &lt;h3 class="push-0">
+          &lt;span class="icon-label"> There are items that require your attention&lt;/span>
+        &lt;/h3>
+  &lt;/div>
+
+  &lt;div class="grid">
+    &lt;div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 ib push">
+      &lt;label for="name">Name&lt;/label>
+      &lt;input id="name" name="name" required aria-describedby="name-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="unit xs-1 s-1 m-1 l-1-2 ib push">
+      &lt;label for="Options">Multiple Questions&lt;/label>
+      &lt;select id="Options" name="Options">
+        &lt;option>Option 1&lt;/option>
+        &lt;option>Option 2&lt;/option>
+      &lt;/select>
+      &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="unit xs-1 s-1 m-1 l-1 xl-1 block">
+      &lt;label for="address">Address&lt;/label>
+      &lt;textarea id="address" name="Address" required aria-describedby="address-error">&lt;/textarea>
+
+      &lt;div class="unit xs-1 s-1 m-1 l-1 xl-1 ib push">
+        &lt;label for="email">Email&lt;/label>
+        &lt;input id="email" name="email" placeholder="me@me.com">
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+
+  &lt;legend>Radio Button&lt;/legend>
+  &lt;input type="radio" id="yes" name="option" required aria-describedby="button-error">
+  &lt;label for="yes">Yes&lt;/label>
+  &lt;input type="radio" id="no" name="option" required aria-describedby="button-error">
+  &lt;label for="no">No&lt;/label>
+
+  &lt;div class="pad-t-1-2">
+    &lt;button class="btn" type="submit">Send&lt;/button>
+  &lt;/div>
+&lt;/form>
 </pre></code>
             </div>
           </div>
@@ -840,6 +959,15 @@
         </div>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The header is where the main options for the website are located:</p>
+<ul>
+<li>All buttons have a small transition making it smoother when hovered.</li>
+<li>There are 4 pages in this website</li>
+</ul>
+<p>Feel free to mix the colours for the hover state of the buttons.</p>
+</div>
+    </div>
 
   
 
@@ -906,19 +1034,107 @@
         <section class="pattern" id="sections">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Sections</h2>
-        <div class="gutter absolute pin-cr">
-          <a class="pattern-pop" href="patterns/sections/sections.html" target="_blank" title="Open pattern in a new tab">
-            <i class="icon i-18">
-              <svg><use xlink:href="#pop-out" /></svg>
-            </i>
-          </a>
-        </div>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4">
+            <li><a href="#sections-sections-cards">Sections cards</a></li>
+            <li><a href="#sections-sections">Sections</a></li>
+        </ol>
+      </nav>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The sections are to maintain the website more organized and clean:</p>
+<ul>
+<li>The section with cards are for the happy trails section where it shows cards of puppies that have been adopted. It will be in a grid.</li>
+<li>The regular section is for the front page where sections such as adopt or any promotion happening will be displaying</li>
+</ul>
+</div>
+    </div>
 
   
 
+    <div class="pattern-details" id="sections-sections-cards">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Sections cards</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/sections/sections-cards.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/sections/sections-cards.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;div class="grid"&gt;
+  &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2">
+    &lt;section class="section-card push-2 island-1-2 max-length pad-t-2">
+      &lt;div class="grid">
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
+          &lt;div class="embed block">
+            &lt;img src="http://placehold.it/140x140">
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="unit xs-1 s-1 m-1-2 l-1-2">
+          &lt;h2 class="yotta">Emily&lt;/h2>
+          &lt;p>Emily was adopted by a wonderful family a year ago. She is 7 years old and couldn&apos;t be more happy to have found such a wonderful family.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/section>
+  &lt;/div>
+  &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2">
+    &lt;section class="section-card push-2 island-1-2 max-length pad-t-2">
+      &lt;div class="grid">
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
+          &lt;div class="embed block">
+            &lt;img src="http://placehold.it/140x140">
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="unit xs-1 s-1 m-1-2 l-1-2">
+          &lt;h2 class="yotta">Emily&lt;/h2>
+          &lt;p>Emily was adopted by a wonderful family a year ago. She is 7 years old and couldn&apos;t be more happy to have found such a wonderful family.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/section>
+  &lt;/div>
+  &lt;div>&lt;/div>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="sections-sections">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Sections</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/sections/sections.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -941,7 +1157,32 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>
+              <code><pre>&lt;section class="history push-2 island-1-2 max-length pad-t-2"&gt;
+  &lt;div class="grid">
+    &lt;div class="island-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
+      &lt;h2 id="history" class="yotta push-0">Donate Today&lt;/h2>
+      &lt;p>Today you can donate and be part of one wonderful organization. Here at Loyal Rescue we give home to lost puppies. &lt;/p>
+    &lt;/div>
+    &lt;div class="unit xs-1 s-1-2 m-1-2 l-1-2 text-center">
+      &lt;div class="push-1-4 embed">
+        &lt;img src="http://placehold.it/140x140">
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
+&lt;section class="history push-2 island-1-2 max-length pad-t-2">
+  &lt;div class="grid">
+    &lt;div class="unit xs-1 s-1-2 m-1-2 l-1-2 text-center">
+      &lt;div class="push-1-4 embed">
+        &lt;img src="http://placehold.it/140x140">
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="island-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
+      &lt;h2 id="history" class="yotta push-0">Donate Today&lt;/h2>
+      &lt;p>Today you can donate and be part of one wonderful organization. Here at Loyal Rescue we give home to lost puppies. &lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
 </pre></code>
             </div>
           </div>
