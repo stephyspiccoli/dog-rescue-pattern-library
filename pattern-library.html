@@ -59,6 +59,22 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#sections">Sections</a></li>
           </ul>
         </nav>
+          <hr>
+          <h2 class="italic kilo normal gutter push-1-4">Pages</h2>
+          <nav class="nav mega">
+            <ul class="list-group">
+                <li>
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="/pages/home-page.html" target="_blank">
+                    <div class="relative">
+                      <span>Home Page</span>
+                      <i class="icon i-18 absolute pin-cr">
+                        <svg><use xlink:href="#pop-out" /></svg>
+                      </i>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+          </nav>
       </div>
     </header>
 
@@ -653,14 +669,21 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;div class="grid banner island-double gutter-2"&gt;
-  &lt;div class="unit xs-1-2 s-1-2 m-1-2 l-1-2 banner-content">
-    &lt;h1 class="push-1-4">Make a dog happy.&lt;/h1>
+              <code><pre>&lt;section class="banner"&gt;
+  &lt;div>
+    &lt;img class="img-flex" src="../../images/dog-banner.jpg" alt="" dog-banner="fixed">
   &lt;/div>
-  &lt;div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-    &lt;a class="push btn btn-light" href="">Adopt&lt;/a>
+  &lt;div class="gutter-2 banner-content">
+    &lt;div class="wrapper grid grid-middle">
+      &lt;div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
+        &lt;h1 class="title">Make a dog happy&lt;/h1>
+      &lt;/div>
+      &lt;div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
+        &lt;a class="btn btn-banner" href="#">Adopt&lt;/a>
+      &lt;/div>
+    &lt;/div>
   &lt;/div>
-&lt;/div>
+&lt;/section>
 </pre></code>
             </div>
           </div>
@@ -720,6 +743,7 @@
               <code><pre>&lt;a class="btn" href="#"&gt;Standard button&lt;/a>
 &lt;a class="btn btn-light" href="#">Light button&lt;/a>
 &lt;a class="btn btn-ghost" href="#">Ghost button&lt;/a>
+&lt;a class="btn btn-banner" href="#">Ghost button&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -1009,10 +1033,10 @@
             <div class="pattern-code milli island-1-2" style="">
               <code><pre>&lt;header class="grid grid-middle masthead island-1-2"&gt;
   &lt;div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
-    &lt;h1 class="text-center exa pad-t logo push-0">Loyal Rescue&lt;/h1>
+    &lt;h1 class="text-center exa logo push-0">Loyal Rescue&lt;/h1>
   &lt;/div>
   &lt;nav class="unit xs-1 s-1 m-1 l-3-4 xl-3-4">
-    &lt;ul class="list-group-inline text-center push-0 pad-t nav">
+    &lt;ul class="list-group-inline text-center push-0 pad-t-1-4 nav">
       &lt;li class="island-1-8">
         &lt;a class="btn btn-light icon-link text-center gutter">
           &lt;span class="icon-label milli block">Home&lt;/span>
@@ -1100,32 +1124,32 @@
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
               <code><pre>&lt;div class="grid"&gt;
-  &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2">
+  &lt;div class="island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
     &lt;section class="section-card push-2 island-1-2 max-length pad-t-2">
       &lt;div class="grid">
-        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
-          &lt;div class="embed block">
-            &lt;img src="http://placehold.it/140x140" alt="">
-          &lt;/div>
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
+          &lt;i class="img-flex push-1-2 block center-block">
+                &lt;img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg">
+              &lt;/i>
         &lt;/div>
-        &lt;div class="unit xs-1 s-1 m-1-2 l-1-2">
-          &lt;h2 class="yotta">Emily&lt;/h2>
-          &lt;p>Emily was adopted by a wonderful family a year ago. She is 7 years old and couldn&apos;t be more happy to have found such a wonderful family.&lt;/p>
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          &lt;h2 class="push-1-4 text-center zetta">Pete&lt;/h2>
+          &lt;p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.&lt;/p>
         &lt;/div>
       &lt;/div>
     &lt;/section>
   &lt;/div>
-  &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2">
+  &lt;div class="island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
     &lt;section class="section-card push-2 island-1-2 max-length pad-t-2">
       &lt;div class="grid">
-        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center">
-          &lt;div class="embed block">
-            &lt;img src="http://placehold.it/140x140" alt="">
-          &lt;/div>
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
+          &lt;i class="img-flex push-1-2 block center-block">
+                &lt;img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg">
+              &lt;/i>
         &lt;/div>
-        &lt;div class="unit xs-1 s-1 m-1-2 l-1-2">
-          &lt;h2 class="yotta">Emily&lt;/h2>
-          &lt;p>Emily was adopted by a wonderful family a year ago. She is 7 years old and couldn&apos;t be more happy to have found such a wonderful family.&lt;/p>
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          &lt;h2 class="push-1-4 text-center zetta">Pete&lt;/h2>
+          &lt;p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.&lt;/p>
         &lt;/div>
       &lt;/div>
     &lt;/section>

@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #115b74;
-  --color-primary-light: #86c5da;
-  --color-secondary: #e49600;
+  --color-primary: #283475;
+  --color-primary-light: #e3dccc;
+  --color-secondary: #a3b5ca;
   --color-regular: #000;
+  --color-white: #fff;
 
   --font-primary: "PT Sans", sans-serif;
   --font-secondary: "Amaranth", sans-serif;
