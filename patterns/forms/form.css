@@ -48,6 +48,6 @@ input[type="radio"] + label::before {
 }
 
 input[type="radio"]:checked + label::before {
-  background-image: url();
+  background-image: url("");
   background-color: var(--color-primary-light);
 }
