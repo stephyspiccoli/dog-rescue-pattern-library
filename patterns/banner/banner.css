@@ -6,12 +6,12 @@
   overflow: hidden;
 }
 
-  .banner-content {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-  }
+.banner-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
 
 .title {
   color: var(--color-white);
