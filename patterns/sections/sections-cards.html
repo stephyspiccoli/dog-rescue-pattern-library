@@ -2,50 +2,107 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Buttons</title>
+  <title>Cards Section</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
   <link href="../../common/type.css" rel="stylesheet">
   <link href="../../common/theme.css" rel="stylesheet">
+  <link href="../../cards/cards.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700" rel="stylesheet">
   <link href="sections.css" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <h1 class="text-center max-length title-cards">Happy trails</h1>
-    <div class="grid">
-      <div class="island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
-        <section class="section-card push-2 island-1-2 max-length pad-t-2">
-          <div class="grid">
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
-              <i class="img-flex push-1-2 block center-block">
-                <img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg" alt="">
-              </i>
+
+  <section class="max-length">
+
+    <div class="carousel">
+      <input class="carousel-input" type="radio" name="mammals" id="arsinoitherium-control" checked>
+      <input class="carousel-input" type="radio" name="mammals" id="elasmotherium-control">
+      <input class="carousel-input" type="radio" name="mammals" id="glyptodon-control">
+      <input class="carousel-input" type="radio" name="mammals" id="megatherium-control">
+
+      <div class="carousel-inner relative">
+        <div class="carousel-items">
+          <div class="carousel-item" id="arsinoitherium">
+
+            <div class="grid">
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 text-center card gutter-1-2">
+                <i class="img-flex push-1-2 block center-block">
+                  <img class="img-flex push-1-2 block center-block" src="../../images/dog-1.jpg" alt="">
+                </i>
+              </div>
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2">
+                <h2 class="push-1-4 text-center zetta">Pete</h2>
+                <p class="push-2 text-center">Pete is a beautiful young dog who found a family 1 year ago and hasn't looked back ever since</p>
+              </div>
             </div>
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
-              <h2 class="push-1-4 text-center zetta">Pete</h2>
-              <p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.</p>
+
+          </div>
+
+          <div class="carousel-item" id="elasmotherium">
+
+            <div class="grid">
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 text-center card gutter-1-2">
+                <i class="img-flex push-1-2 block center-block">
+                  <img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg" alt="">
+                </i>
+              </div>
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2">
+                <h2 class="push-1-4 text-center zetta">Jack</h2>
+                <p class="push-2 text-center">Jack found a family 2 years ago and has been happy ever since. He has 2 brothers and one sister.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-item" id="glyptodon">
+            <div class="grid">
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 text-center card gutter-1-2">
+                <i class="img-flex push-1-2 block center-block">
+                  <img class="img-flex push-1-2 block center-block" src="../../images/dog-2.jpg" alt="">
+                </i>
+              </div>
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2">
+                <h2 class="push-1-4 text-center zetta">Simba</h2>
+                <p class="push-2 text-center">Simba is a beautiful black lab that found a big family this month.</p>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
-        <section class="section-card push-2 island-1-2 max-length pad-t-2">
-          <div class="grid">
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
-              <i class="img-flex push-1-2 block center-block">
-                <img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg" alt="">
-              </i>
-            </div>
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
-              <h2 class="push-1-4 text-center zetta">Pete</h2>
-              <p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.</p>
+
+          <div class="carousel-item" id="megatherium">
+            <div class="grid">
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 text-center card gutter-1-2">
+                <i class="img-flex push-1-2 block center-block">
+                  <img class="img-flex push-1-2 block center-block" src="../../images/pub-1.jpg" alt="">
+                </i>
+              </div>
+              <div class="island-1-2 unit xs-1 s-1 m-1 l-1-2">
+                <h2 class="push-1-4 text-center zetta">Pubby</h2>
+                <p class="push-2 text-center">Pubby is a cute young dog that has found a family 3 years ago and since has been happy and energetic.</p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="arsinoitherium-control">Arsinoitherium</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="elasmotherium-control">Elasmotherium</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="glyptodon-control">Glyptodon</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="megatherium-control">Megatherium</label>
+          </li>
+        </ul>
       </div>
+
     </div>
+
   </section>
 
 </body>

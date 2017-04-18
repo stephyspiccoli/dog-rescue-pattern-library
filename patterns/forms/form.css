@@ -2,6 +2,11 @@ html {
   font-family: sans-serif;
 }
 
+.adopt-title {
+  border-top: 3px solid var(--color-primary-light);
+  border-bottom: 3px solid var(--color-primary-light);
+}
+
 .flag-optional {
   color: #999;
 }

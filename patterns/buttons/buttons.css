@@ -78,3 +78,20 @@
 
   color: var(--color-primary-light);
 }
+
+.btn-card {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  font-family: var(--font-secondary);
+
+  color: var(--color-white);
+  transition-duration: .25s;
+  transition-timing-function: linear;
+}
+
+.btn-card:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
+
+  color: var(--color-primary);
+}

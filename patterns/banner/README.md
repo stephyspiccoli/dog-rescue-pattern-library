@@ -1,1 +1,1 @@
-The banner appears after the navigation and it will contain a call to action button where users can imediately go to the adoptions page on the website. The banner will contain a picture as a background with an overlay.
+The banner appears after the navigation and it will contain a call to action button where users can immediately go to the adoptions page on the website. The banner will contain a picture as a background with an overlay.
