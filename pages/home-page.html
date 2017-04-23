@@ -14,14 +14,24 @@
   <link href="../patterns/banner/banner.css" rel="stylesheet">
   <link href="../patterns/sections/sections.css" rel="stylesheet">
   <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+
 </head>
 <body>
 
-  <header class="grid grid-middle masthead island-1-2">
-    <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
-      <h1 class="text-center exa logo push-0">Loyal Rescue</h1>
+  <header class="grid text-center grid-middle masthead island-1">
+    <div class="unit xs-1 s-1 m-1 l-1 xl-1-2">
+      <i class="icon i-128">
+        <img src="../../images/wordmark.svg" alt="">
+      </i>
     </div>
-    <nav class="unit xs-1 s-1 m-1 l-3-4 xl-3-4">
+
+    <nav role="navigation" id="nav" class="navi unit xs-1 s-1 m-1 l-1">
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label class="hide-custom-input nav-label" for="nav-check">
+        <img class="pad-t-2 nav-open" src="../../images/nav-icon.svg" alt="Open Navigation">
+        <img class="pad-t-2 nav-close" src="../../images/nav-icon-close.svg" alt="Close Navigation">
+      </label>
       <ul class="list-group-inline text-center push-0 pad-t-1-4 nav">
         <li class="island-1-8">
           <a class="btn btn-header icon-link text-center gutter" href="../pages/home-page.html">
@@ -43,6 +53,11 @@
             <span class="icon-label milli block">About</span>
           </a>
         </li>
+        <li class="island-1-8">
+          <a class="btn btn-header icon-link text-center gutter">
+            <span class="icon-label milli block">FAQ</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -57,7 +72,7 @@
           <h1 class="title">Make a dog happy</h1>
         </div>
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-          <a class="btn btn-banner" href="#">Adopt</a>
+          <a class="btn btn-banner" href="../../pages/adoption-page.html">Adopt</a>
         </div>
       </div>
     </div>
@@ -84,69 +99,20 @@
         </div>
       </div>
       <div class="island-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
-        <h2 id="donate" class="yotta push-0">Donate Today</h2>
         <p class="">Today you can donate and be part of one wonderful organization. Here at Loyal Rescue we give home to lost puppies. </p>
-        <div>
-          <a class="btn btn-light" href="#">Donate</a>
+        <div class="card grid-middle grid">
+          <i class="unit xs-1-2 s-1-2 m-1-2 l-1-2 icon i-64">
+            <svg class="bone"><use xlink:href="../../images/icons.svg#bone-icon"/></svg>
+          </i>
+          <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
+            <h2 class="push-0">Donate Today</h2>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
 
-
-    <h1 class="text-center max-length title-cards">Happy trails</h1>
-    <div class="grid carousel-inner relative">
-      <div class="carousel-items island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
-
-        <section class="section-card push-2 island-1-2 max-length pad-t-2">
-          <div class="grid carousel-item" id="dog-2">
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
-              <i class="img-flex push-1-2 block center-block">
-                <img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg" alt="">
-              </i>
-            </div>
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
-              <h2 class="push-1-4 text-center zetta">Pete</h2>
-              <p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.</p>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <div class="island-1-2 gutter-1-2 pad-1-2 unit xs-1 s-1-2 m-1-2 l-1-2">
-        <section class="section-card push-2 island-1-2 max-length pad-t-2">
-          <div class="grid carousel-item" id="dog-1">
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2 text-center card gutter-1-2">
-              <i class="img-flex push-1-2 block center-block">
-                <img class="img-flex push-1-2 block center-block" src="../../images/dog.jpg" alt="">
-              </i>
-            </div>
-            <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-2">
-              <h2 class="push-1-4 text-center zetta">Pete</h2>
-              <p class="push-0 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt in felis ac accumsan. Proin.</p>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
-  <li>
-    <label class="carousel-btn icon i-18 ir" for="dog-1">Dog-1</label>
-  </li>
-  <li>
-    <label class="carousel-btn icon i-18 ir" for="dog-2">Dog-2</label>
-  </li>
-</ul>
-  </section>
-
-  <footer id="footer" role="contentinfo">
-    <div class="wrapper island-1-2">
-      <p class="text-center">Stephanie Piccoli Designs © <i>Loyal Rescue</i>, 1936</p>
-    </div>
-  </footer>
 
 </body>
 </html>
