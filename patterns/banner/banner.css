@@ -2,7 +2,6 @@
   background-size: cover;
   background-color: var(--color-light-primary);
   position: relative;
-  max-height: 400px;
   overflow: hidden;
 }
 
