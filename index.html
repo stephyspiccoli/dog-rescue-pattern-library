@@ -78,7 +78,7 @@
           <nav class="nav mega">
             <ul class="list-group">
                 <li>
-                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="/pages/adoption-page.html" target="_blank">
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="pages/adoption-page.html" target="_blank">
                     <div class="relative">
                       <span>Adoption Page</span>
                       <i class="icon i-18 absolute pin-cr">
@@ -88,7 +88,17 @@
                   </a>
                 </li>
                 <li>
-                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="/pages/home-page.html" target="_blank">
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="pages/form-page.html" target="_blank">
+                    <div class="relative">
+                      <span>Form Page</span>
+                      <i class="icon i-18 absolute pin-cr">
+                        <svg><use xlink:href="#icon-pop-out" /></svg>
+                      </i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="gutter pad-t-1-4 pad-b-1-4 block page-pop" href="pages/home-page.html" target="_blank">
                     <div class="relative">
                       <span>Home Page</span>
                       <i class="icon i-18 absolute pin-cr">
@@ -1052,7 +1062,8 @@
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
             <li><a href="#forms-dropdown">Dropdown</a></li>
-            <li><a href="#forms-index">Index</a></li>
+            <li><a href="#forms-form-application">Form application</a></li>
+            <li><a href="#forms-form-example">Form example</a></li>
         </ol>
       </nav>
   </div>
@@ -1159,19 +1170,19 @@
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="forms-index" style="">
+    <div class="pattern-details" id="forms-form-application" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Index</h3>
+          <h3 class="pattern-name tera push-1-8">Form application</h3>
             <ul class="list-group-inline gutter absolute pin-cr">
                 <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-index-code-sample">
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-form-application-code-sample">
                     <i class="icon i-18">
                       <svg><use xlink:href="#icon-code"></use></svg>
                     </i>
                   </button>
                 </li>
                 <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/index.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/form-application.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
                     <i class="icon i-18">
                       <svg><use xlink:href="#icon-pop-out"></use></svg>
                     </i>
@@ -1183,7 +1194,7 @@
       <div class="pattern-examples pad-t-1-2 pad-b-1-2">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2">
           <div class="resizeable-pattern relative" style="">
-            <iframe data-src="patterns/forms/index.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+            <iframe data-src="patterns/forms/form-application.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1199,14 +1210,118 @@
           </div>
         </div>
 
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-index-code-sample" tabindex="-1">
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-form-application-code-sample" tabindex="-1">
             <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-index-code-sample-copy-chunk" hidden>
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-form-application-code-sample-copy-chunk" hidden>
                 <i class="icon i-18">
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="forms-index-code-sample-copy-chunk">&lt;form class="max-length form island-1-2 gutter-1-2" method="POST" novalidate=""&gt;
+              <code><pre id="forms-form-application-code-sample-copy-chunk">&lt;form class="pad-t-2 form-application form max-length island-1-2 gutter-1-2" method="POST" novalidate=""&gt;
+
+  &lt;h1 class="text-center">Adoption Application&lt;/h1>
+  &lt;div class="push-2">
+    &lt;div>
+      &lt;p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.&lt;/p>
+    &lt;/div>
+    &lt;div class="grid-middle text-center">
+      &lt;input type="radio" id="yes" name="option">
+      &lt;label for="yes">Yes&lt;/label>
+      &lt;input type="radio" id="no" name="option">
+      &lt;label for="no">No&lt;/label>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="push-2">
+    &lt;div>
+      &lt;p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/p>
+    &lt;/div>
+    &lt;div class="grid-middle text-center">
+      &lt;input type="radio" id="yes-1" name="option">
+      &lt;label for="yes-1">Yes&lt;/label>
+      &lt;input type="radio" id="no-1" name="option">
+      &lt;label for="no-1">No&lt;/label>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="push-2">
+    &lt;div>
+      &lt;p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/p>
+    &lt;/div>
+    &lt;div class="grid-middle text-center">
+      &lt;input type="radio" id="yes-2" name="option">
+      &lt;label for="yes-2">Yes&lt;/label>
+      &lt;input type="radio" id="no-2" name="option">
+      &lt;label for="no-2">No&lt;/label>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="push-2">
+    &lt;div>
+      &lt;p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/p>
+    &lt;/div>
+    &lt;div class="grid-middle text-center">
+      &lt;input type="radio" id="yes-3" name="option">
+      &lt;label for="yes-3">Yes&lt;/label>
+      &lt;input type="radio" id="no-3" name="option">
+      &lt;label for="no-3">No&lt;/label>
+    &lt;/div>
+  &lt;/div>
+
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-form-example" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Form example</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-form-example-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/form-example.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/forms/form-example.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-form-example-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-form-example-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="forms-form-example-code-sample-copy-chunk">&lt;form class="max-length form island-1-2 gutter-1-2" method="POST" novalidate=""&gt;
 
   &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
     &lt;h3 class="push-0">
@@ -1224,9 +1339,9 @@
     &lt;/div>
 
     &lt;div class="unit xs-1 s-1 m-1 l-1-2 ib push">
-      &lt;label for="Options">Multiple Questions&lt;/label>
-      &lt;select id="Options" name="Options" required aria-describedby="multiple-error">
-        &lt;option value=""> &lt;/option>
+      &lt;label for="options">Multiple Questions&lt;/label>
+      &lt;select id="options" name="options" required aria-describedby="multiple-error">
+        &lt;option>Option 0&lt;/option>
         &lt;option>Option 1&lt;/option>
         &lt;option>Option 2&lt;/option>
       &lt;/select>
@@ -1255,17 +1370,17 @@
     &lt;/div>
 
     &lt;div class="unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-      &lt;label for="name">Name&lt;/label>
-      &lt;input id="name" name="name" required aria-describedby="name-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;label for="phone">Phone&lt;/label>
+      &lt;input id="phone" name="phone" required aria-describedby="phone-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="phone-error">
         &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
       &lt;/p>
     &lt;/div>
 
     &lt;div class="unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-      &lt;label for="name">Name&lt;/label>
-      &lt;input id="name" name="name" required aria-describedby="name-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;label for="home">Phone Home&lt;/label>
+      &lt;input id="home" name="home" required aria-describedby="home-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="home-error">
         &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
       &lt;/p>
     &lt;/div>
@@ -1273,8 +1388,7 @@
   &lt;/div>
 
 
-
-  &lt;legend>Radio Button&lt;/legend>
+  &lt;p>Radio Button&lt;/p>
   &lt;input type="radio" id="yes" name="option" required aria-describedby="button-error">
   &lt;label for="yes">Yes&lt;/label>
   &lt;input type="radio" id="no" name="option" required aria-describedby="button-error">
@@ -1357,9 +1471,9 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="header-header-code-sample-copy-chunk">&lt;header class="grid text-center grid-middle masthead island-1"&gt;
+              <code><pre id="header-header-code-sample-copy-chunk">&lt;header class="grid push-1-2 text-center grid-middle masthead island-1-4"&gt;
   &lt;div class="unit xs-1 s-1 m-1 l-1 xl-1-2">
-    &lt;i class="icon i-128">
+    &lt;i class="icon i-192">
         &lt;img src="../../images/wordmark.svg" alt="">
       &lt;/i>
   &lt;/div>
@@ -1477,21 +1591,61 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="sections-sections-adoption-code-sample-copy-chunk">&lt;section class="text-center"&gt;
+              <code><pre id="sections-sections-adoption-code-sample-copy-chunk">&lt;h2 class="adopt-title island-1-2 text-center"&gt;Adopt a Friend Today&lt;/h2>
+
+&lt;div class="grid">
+  &lt;div class="unit xs-1 s-1 m-1-4 l-1-4 ib island-1-2 push">
+    &lt;label for="species">Species&lt;/label>
+    &lt;select id="species">
+      &lt;option>ALL&lt;/option>
+      &lt;option>Cats&lt;/option>
+      &lt;option>Dogs&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="unit xs-1 s-1 m-1-4 l-1-4 ib push island-1-2">
+    &lt;label for="breed">Breed&lt;/label>
+    &lt;select id="breed">
+      &lt;option>ALL&lt;/option>
+      &lt;option>Golden Retriever&lt;/option>
+      &lt;option>Labrador&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="unit xs-1 s-1 m-1-4 l-1-4 ib push island-1-2">
+    &lt;label for="age">Age&lt;/label>
+    &lt;select id="age">
+      &lt;option>ALL&lt;/option>
+      &lt;option>Baby&lt;/option>
+      &lt;option>Young&lt;/option>
+      &lt;option>Adult&lt;/option>
+      &lt;option>Senior&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="unit xs-1 s-1 m-1-4 l-1-4 ib push island-1-2">
+    &lt;label for="sex">Sex&lt;/label>
+    &lt;select id="sex">
+      &lt;option>ALL&lt;/option>
+      &lt;option>Female&lt;/option>
+      &lt;option>Male&lt;/option>
+    &lt;/select>
+  &lt;/div>
+&lt;/div>
+
+&lt;section class="text-center">
   &lt;h1 class="text-center max-length title-cards">Adoption&lt;/h1>
 
   &lt;div class="grid">
-    &lt;div class="pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+    &lt;div class="gutter-1-4 pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
       &lt;div class="section-card push-2 island-1-2 max-length pad-t-2">
         &lt;div class="grid">
-          &lt;div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 text-center gutter-1-2">
-            &lt;i class="img-flex push-1-2 block center-block">
+
+          &lt;div class="unit xs-1 s-1 m-1 l-1 xl-1-2 text-center">
+            &lt;i>
                 &lt;img class="img-flex push-1-4 block center-block" src="../../images/dog-1.jpg" alt="">
               &lt;/i>
           &lt;/div>
-          &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 ">
+          &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1 xl-1-2 ">
             &lt;h2 class="push-1-4 text-center zetta">Whity&lt;/h2>
-            &lt;p class="push-1-2 text-center">Whity is fury and excited to meet his new family.&lt;/p>
+            &lt;p class="push-1-2 text-center">Whity is an adorable white labrador that is 4 years old, he is looking for a special family.&lt;/p>
             &lt;div>
               &lt;a class="btn btn-card" href="#">Adopt&lt;/a>
             &lt;/div>
@@ -1500,16 +1654,16 @@
       &lt;/div>
     &lt;/div>
 
-    &lt;div class="gutter-1-2 pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+    &lt;div class="gutter-1-4 pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
       &lt;div class="section-card push-2 island-1-2 max-length pad-t-2">
-        &lt;div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 text-center gutter-1-2">
-          &lt;i class="img-flex push-1-2 block center-block">
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1 l-1 xl-1-2 text-center">
+          &lt;i>
               &lt;img class="img-flex push-1-4 block center-block" src="../../images/dog-2.jpg" alt="">
             &lt;/i>
         &lt;/div>
-        &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 ">
+        &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1 xl-1-2 ">
           &lt;h2 class="push-1-4 text-center zetta">Shadow&lt;/h2>
-          &lt;p class="push-1-2 text-center">Shadow is a loyal friend. Thi lovely dog is ana amazing friend a beautiful dog&lt;/p>
+          &lt;p class="push-1-2 text-center">Whity is an adorable black labrador that is 2 years old, he is looking for a special family.&lt;/p>
           &lt;div>
             &lt;a class="btn btn-card" href="#">Adopt&lt;/a>
           &lt;/div>
@@ -1517,21 +1671,22 @@
       &lt;/div>
     &lt;/div>
 
-    &lt;div class="gutter-1-2 pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
+    &lt;div class="gutter-1-4 pad-1-2 unit xs-1 s-1 m-1-3 l-1-3 xl-1-3">
       &lt;div class="section-card push-2 island-1-2 max-length pad-t-2">
-        &lt;div class="island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 text-center gutter-1-2">
-          &lt;i class="img-flex push-1-2 block center-block">
-              &lt;img class="img-flex push-1-4 block center-block" src="../../images/dog-2.jpg" alt="">
+        &lt;div class="island-1-2 unit xs-1 s-1 m-1 l-1 xl-1-2 text-center">
+          &lt;i>
+              &lt;img class="img-flex push-1-4 block center-block" src="../../images/pub-1.jpg" alt="">
             &lt;/i>
         &lt;/div>
-        &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1-2 xl-1-2 ">
-          &lt;h2 class="push-1-4 text-center zetta">Shadow&lt;/h2>
-          &lt;p class="push-1-2 text-center">Shadow is a loyal friend. Thi lovely dog is ana amazing friend a beautiful dog&lt;/p>
+        &lt;div class="text-center island-1-2 unit xs-1 s-1 m-1 l-1 xl-1-2 ">
+          &lt;h2 class="push-1-4 text-center zetta">Pubs&lt;/h2>
+          &lt;p class="push-1-2 text-center">Pubs is an adorable pug that is 2 years old, and this cutie is looking for a special family.&lt;/p>
           &lt;div>
             &lt;a class="btn btn-card" href="#">Adopt&lt;/a>
           &lt;/div>
         &lt;/div>
       &lt;/div>
+
     &lt;/div>
   &lt;/div>
 
