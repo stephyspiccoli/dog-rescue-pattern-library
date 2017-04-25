@@ -61,12 +61,21 @@
     </nav>
   </header>
 
+
+
   <form class="pad-t-2 form-application form max-length island-1-2 gutter-1-2" method="POST" novalidate>
 
     <h1 class="text-center">Adoption Application</h1>
+      <p class="milli">Please be aware that our application form is quite extensive and it may take you 20 minutes or more to complete it.</p>
+      <p class="milli">Among other things, we will require the name and phone number of your Veterinarian and three personal references that are not family members. Ideally, use personal references who currently own dogs that you interact with on a regular basis.</p>
+      <p class="milli">Please be sure to advise them that they will be contacted by a volunteer from LOYAL Rescue Inc. - in particular your Veterinarian as most will not release medical history without prior permission and this could result in an unnecessary delay of your application process.</p>
+      <p class="push-2 milli">If you have had pets in the past but do not currently have any, your most recent Veterinarian information is required. If you have never owned a pet before then one additional personal reference is required instead.</p>
+
+    <h2 class="pad-t-2 text-center">About You</h2>
+
     <div class="push-2">
-      <div class="">
-        <p class="">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+      <div>
+        <p class="push-1-4">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
       </div>
       <div class="grid-middle text-center">
         <input type="radio" id="yes" name="option">
@@ -78,7 +87,7 @@
 
     <div class="push-2">
       <div>
-        <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+        <p class="push-1-4">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
       </div>
       <div class="grid-middle text-center">
         <input type="radio" id="yes-1" name="option-1">
@@ -90,7 +99,7 @@
 
     <div class="push-2">
       <div>
-        <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+        <p class="milli push-1-4">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
       </div>
       <div class="grid-middle text-center">
         <input type="radio" id="yes-2" name="option-2">
@@ -100,33 +109,60 @@
       </div>
     </div>
 
-    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-      <h3 class="push-0">
-        <span class="icon-label"> There are items that require your attention</span>
-      </h3>
+    <div class="push-2">
+      <div>
+        <p class="milli push-1-4">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+      </div>
+      <div class="grid-middle text-center">
+        <input type="radio" id="yes-3" name="option-3">
+        <label for="yes-2">Yes</label>
+        <input type="radio" id="no-3" name="option-3">
+        <label for="no-2">No</label>
+      </div>
+    </div>
+
+    <div class="push-2">
+      <div>
+        <p class="milli push-1-4">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+      </div>
+      <div class="grid-middle text-center">
+        <input type="radio" id="yes-4" name="option-4">
+        <label for="yes-2">Yes</label>
+        <input type="radio" id="no-4" name="option-4">
+        <label for="no-2">No</label>
+      </div>
     </div>
 
     <div class="grid">
 
-      <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-        <label for="address">First Name</label>
-        <textarea id="address" name="Address" required aria-describedby="address-error"></textarea>
-        <p class="error-message milli island-1-4 push-0" id="address-error">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="first-name">First Name</label>
+        <input id="first-name" name="first-name" required aria-describedby="first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="first-name-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
       </div>
 
-      <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-        <label for="last">Last Name</label>
-        <textarea id="last" name="Last" required aria-describedby="last-error"></textarea>
-        <p class="error-message milli island-1-4 push-0" id="last-error">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" name="first-name" required aria-describedby="first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="first-name-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
       </div>
 
-      <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="age">Age</label>
+        <input id="age" name="age" required aria-describedby="age-error">
+        <p class="error-message milli island-1-4 push-0" id="age-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push-0">
         <label for="email">Email</label>
         <input id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
         <p class="error-message milli island-1-4 push-0" id="email-error">
@@ -135,7 +171,43 @@
         </p>
       </div>
 
-      <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="first-name">Partner's First Name</label>
+        <input id="first-name" name="first-name" required aria-describedby="first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="first-name-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="last-name">Partner's Last Name</label>
+        <input id="last-name" name="first-name" required aria-describedby="first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="first-name-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
+        <label for="age">Partner's Age</label>
+        <input id="age" name="age" required aria-describedby="age-error">
+        <p class="error-message milli island-1-4 push-0" id="age-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push-2">
+        <label for="email">Partner's Email</label>
+        <input id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
+        <p class="error-message milli island-1-4 push-0" id="email-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push-0">
         <label for="name">Adress</label>
         <input id="name" name="name" required aria-describedby="name-error">
         <p class="error-message milli island-1-4 push-0" id="name-error">
@@ -144,11 +216,51 @@
         </p>
       </div>
 
-      <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push-0">
         <label for="city">City</label>
         <input id="city" name="city" required aria-describedby="city-error">
         <p class="error-message milli island-1-4 push-0" id="city-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push-0">
+        <label for="prov/state">Prov/State</label>
+        <input id="prov/state" name="prov/state" required aria-describedby="prov/state-error">
+        <p class="error-message milli island-1-4 push-0" id="prov/state-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push-2">
+        <label for="postal/zipcode">Postal/Zip Code</label>
+        <input id="postal/zipcode" name="postal/zipcode" required aria-describedby="cpostal/zipcode-error">
+        <p class="error-message milli island-1-4 push-0" id="postal/zipcode-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+        <label for="prov/state">Primary Phone</label>
+        <input id="prov/state" name="prov/state" required aria-describedby="prov/state-error">
+        <p class="error-message milli island-1-4 push-0" id="prov/state-error">
+          <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
+          <span class="icon-label">Please provide a properly formatted email address</span>
+        </p>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+        <label for="options">Type</label>
+        <select id="options" name="options" required aria-describedby="multiple-error">
+          <option value="Option-0">Home</option>
+          <option value="Option-1">Mobile</option>
+          <option value="Option-2">Work</option>
+        </select>
+        <p class="error-message milli island-1-4 push-0" id="multiple-error">
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
       </div>
