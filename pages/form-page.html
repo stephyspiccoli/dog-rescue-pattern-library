@@ -146,8 +146,8 @@
 
       <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
         <label for="last-name">Last Name</label>
-        <input id="last-name" name="first-name" required aria-describedby="first-name-error">
-        <p class="error-message milli island-1-4 push-0" id="first-name-error">
+        <input id="last-name" name="last-name" required aria-describedby="last-name-error">
+        <p class="error-message milli island-1-4 push-0" id="last-name-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
@@ -172,18 +172,18 @@
       </div>
 
       <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
-        <label for="first-name">Partner's First Name</label>
-        <input id="first-name" name="first-name" required aria-describedby="first-name-error">
-        <p class="error-message milli island-1-4 push-0" id="first-name-error">
+        <label for="partner-first-name">Partner's First Name</label>
+        <input id="partner-first-name" name="first-name" required aria-describedby="partner-first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="partner-first-name-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
       </div>
 
       <div class="island-1-4 unit xs-1 s-1 m-1-3 l-1-3 ib push-0">
-        <label for="last-name">Partner's Last Name</label>
-        <input id="last-name" name="first-name" required aria-describedby="first-name-error">
-        <p class="error-message milli island-1-4 push-0" id="first-name-error">
+        <label for="partner-last-name">Partner's Last Name</label>
+        <input id="partner-last-name" name="partner-first-name" required aria-describedby="partner-first-name-error">
+        <p class="error-message milli island-1-4 push-0" id="partner-first-name-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
@@ -236,7 +236,7 @@
 
       <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push-2">
         <label for="postal/zipcode">Postal/Zip Code</label>
-        <input id="postal/zipcode" name="postal/zipcode" required aria-describedby="cpostal/zipcode-error">
+        <input id="postal/zipcode" name="postal/zipcode" required aria-describedby="ostal/zipcode-error">
         <p class="error-message milli island-1-4 push-0" id="postal/zipcode-error">
           <i class="icon i-16"><svg><use xlink:href="../images/icons-form.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
@@ -255,6 +255,7 @@
       <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
         <label for="options">Type</label>
         <select id="options" name="options" required aria-describedby="multiple-error">
+          <option value="">…</option>
           <option value="Option-0">Home</option>
           <option value="Option-1">Mobile</option>
           <option value="Option-2">Work</option>
