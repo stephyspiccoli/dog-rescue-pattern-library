@@ -1,17 +1,29 @@
 .banner {
   background-size: cover;
-  background-color: var(--color-light-primary);
   position: relative;
   overflow: hidden;
 }
 
 .banner-content {
   position: absolute;
+  top: 30%;
+  left: 0;
   width: 100%;
-  bottom: 40px;
-  text-align: center;
+  text-align: right;
 }
 
-.title {
-  color: var(--color-white);
+
+@media only screen and (min-width: 25em) {
+
+
+}
+
+@media only screen and (min-width: 38em) {
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+
 }

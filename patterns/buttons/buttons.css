@@ -17,6 +17,8 @@
   border-color: var(--color-accent);
 
   color: #fff;
+
+  transition-duration: .25s;
 }
 
 .btn-light:hover {
@@ -36,7 +38,7 @@
 
 .btn-ghost:hover {
   background-color: transparent;
-  border-color: var(--color-primary-light);
+  border-color: var(--color-accent);
 
   color: var(--color-primary-light);
 }
@@ -70,13 +72,18 @@
   color: var(--color-white);
   transition-duration: .25s;
   transition-timing-function: linear;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-radius: 10px;
 }
 
 .btn-banner:hover {
   background-color: transparent;
-  border-color: var(--color-primary-light);
+  border-color: var(--color-secondary);
+  border-top: transparent;
+  border-bottom: transparent;
 
-  color: var(--color-primary-light);
+  color: var(--color-secondary);
 }
 
 .btn-card {
