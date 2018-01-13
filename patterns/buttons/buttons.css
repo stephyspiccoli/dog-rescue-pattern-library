@@ -50,7 +50,7 @@
   color: var(--color-primary);
   font-family: var(--font-secondary);
 
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
 }
 
 .btn-navigation:hover {

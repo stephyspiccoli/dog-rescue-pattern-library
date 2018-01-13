@@ -3,15 +3,16 @@ li {
   display: inline-block;
 }
 
+.loyal-logo {
+  margin: 0 auto 0 auto;
+}
+
 @media only screen and (min-width: 25em) {
 
   ul li {
-    text-align:right;
+    text-align: right;
   }
 
-  .s-1 {
-    text-align: center;
-  }
 
 }
 
@@ -21,8 +22,14 @@ li {
     display: inline-block;
   }
 
-  .s-1 {
-    text-align: left;
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  ul li {
+    display: inline-block;
   }
+
 
 }
