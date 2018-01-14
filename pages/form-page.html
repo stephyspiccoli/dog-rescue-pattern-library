@@ -40,27 +40,30 @@
     </div>
   </header>
 
-  <form>
+  <main>
 
-    <p class="gutter-1-2 push-1-4">Please fill out the form bellow to apply for your perfect puppy</p>
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label class="island-1-2" for="tab1">About You</label>
 
-    <div class="tab">
-      <button class="tablinks" onclick="openForm(event, 'London')">About You</button>
-      <button class="tablinks" onclick="openForm(event, 'Paris')">Your Lifestyle</button>
-      <button class="tablinks" onclick="openForm(event, 'Tokyo')">Pet Information</button>
-    </div>
+    <input id="tab2" type="radio" name="tabs">
+    <label class="island-1-2" for="tab2">Personal Information</label>
 
-    <div id="London" class=" tabcontent">
-      <h4 class="max-length pad-t-1-2">Personal Information</h4>
+    <input id="tab3" type="radio" name="tabs">
+    <label class="island-1-2" for="tab3">Dropbox</label>
+
+    <input id="tab4" type="radio" name="tabs">
+    <label class="island-1-2" for="tab4">Almost There</label>
+
+    <section class="section-form" id="content1">
       <form class="gutter-1-2 max-length form island-1-2 gutter-1-2" method="POST" novalidate>
 
         <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
           <h3 class="push-0">
-            <span class="icon-label"> There are items that require your attention</span>
+            <span class="icon-label"> There are items require your attention</span>
           </h3>
         </div>
 
-        <div class="max-length grid">
+        <div class="grid">
           <div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
             <label for="name">Name</label>
             <input class="select-form" id="name" name="name" required aria-describedby="name-error">
@@ -76,14 +79,14 @@
               <option value="Option-1">Option 1</option>
               <option value="Option-2">Option 2</option>
             </select>
-            <p class="error-message milli island-1-4 push-0" id="multiple-error">
+            <p class="error-message milli  push-0" id="multiple-error">
               <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
               <span class="icon-label">Please provide a properly formatted email address</span>
             </p>
           </div>
 
           <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
-            <label for="address">Address</label>
+            <label class="" for="address">Address</label>
             <textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error"></textarea>
             <p class="error-message milli island-1-4 push-0" id="address-error">
               <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
@@ -117,39 +120,47 @@
           </div>
 
         </div>
-
-        <div class="max-length push-1-2 pad-t-1-2">
-          <button class="btn" type="submit">Send</button>
-        </div>
       </form>
-    </div>
+    </section>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Tell us about yourself</h3>
-      <p>Who you are</p>
-    </div>
+    <section class="section-form" id="content2">
+      <p>
+        Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
+      </p>
+      <p>
+        Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
+      </p>
+    </section>
 
-    <div id="Tokyo" class="tabcontent">
-      <h3>Information on the pet you want to adopt</h3>
-      <p>Who is the little guy you want to adopt</p>
-    </div>
+    <section class="section-form" id="content3">
+      <p>
+        Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
+      </p>
+      <p>
+        Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
+      </p>
+    </section>
 
-    <form class="wrapper max-length pad-t-2 form-application form island-1-2 gutter-1-2" method="POST" novalidate>
-
-      <h1 class="text-center">Adoption Application</h1>
-      <div class="push-2">
+    <section class="section-form" id="content4">
+      <div class="max-length pad-t-1-2 push-2">
         <div class="">
           <p class="push-1-2">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
           <p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
           <p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
         </div>
-        <div class="grid-middle pad-t-2 text-center">
-          <input type="radio" id="no-1" name="option-1">
-          <label for="no-1">Agree to the terms and conditions.</label>
-        </div>
-      </div>
 
-    </form>
+        <div class="push-1-2 pad-t-2">
+          <input type="radio" name="fieldset-4" id="radio4-example-three"/>
+           <label for="radio4-example-three">I agree to the terms and conditions.</label>
+        </div>
+
+        <div class="island-1-4 pad-t-2">
+          <a href="home-page.html" class="btn" type="submit">Send</a>
+        </div>
+
+      </form>
+
+  </main>
 
 
   </form>
@@ -172,7 +183,7 @@
       <li class="gutter-1-2"><a class="btn btn-banner" href="#">Instagram</a></li>
       <li class="gutter-1-2"><a class="btn btn-banner" href="#">Facebook</a></li>
     </ul>
-    <p class="push-0 text-center micro">Piccoli Designs © <i>Loyal Rescue</i>, 1936</p>
+    <p class="push-0 text-center micro">Piccoli Designs © <i>Loyal Rescue</i>, 2016</p>
   </footer>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
