@@ -1,4 +1,9 @@
-
+.adopt-h3 {
+  border-top: 2px solid var(--color-grey-light);
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 2px solid var(--color-grey-light);
+}
 
 
 .section-form {
