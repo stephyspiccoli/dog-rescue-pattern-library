@@ -5,9 +5,10 @@
   max-height: 800px;
 }
 
+
 .card-banner {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -19,22 +20,43 @@
 
 @media only screen and (min-width: 25em) {
 
-h1 {
-  padding-top: 1em;
-  transition: .5s;
+.banner h2 {
+  font-size: 1.5em;
+}
+
+.card-banner {
+  position: absolute;
+  top: 30%;
 }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  h1 {
-    padding-top: 2em;
+  .banner h2 {
+    font-size: 2em;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  .banner h2 {
+    font-size: 3em;
+    padding-bottom: .2em;
+  }
+
+  .card-banner {
+    position: absolute;
+    top: 20%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner h2 {
+    font-size: 4em;
+  }
 
 }

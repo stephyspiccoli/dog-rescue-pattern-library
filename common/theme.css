@@ -1,11 +1,10 @@
 :root {
-  --color-primary: #003B46;
-  --color-primary-light: #08575B;
-  --color-secondary: #66A5AC;
-  --color-accent: #C5DFE6;
+  --color-primary: #d99728;
+  --color-primary-light: #fdba18;
   --color-regular: #686868;
   --color-white: #fff;
   --color-black: #000;
+  --color-grey-light: #efefef;
 
   --font-primary: "PT Sans", sans-serif;
   --font-secondary: "Amaranth", sans-serif;
@@ -17,18 +16,18 @@ html {
   color: var(--color-regular);
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: var(--color-primary);
   font-family: var(--font-secondary);
 }
 
-h4, h5, h6 {
+h3, h4, h5, h6 {
   color: var(--color-primary-light);
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
 }
 
 a {
-  color: var(--color-secondary);
+  color: var(--color-white);
   font-family: var(--font-secondary);
 }
 

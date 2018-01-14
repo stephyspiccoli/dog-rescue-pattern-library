@@ -13,89 +13,126 @@
   <link href="form.css" rel="stylesheet">
 </head>
 
-<body class="pad-t-1-2 gutter-1-4">
-  <form class="max-length form island-1-2 gutter-1-2" method="POST" novalidate>
+<body class="">
 
-    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-      <h3 class="push-0">
-        <span class="icon-label"> There are items that require your attention</span>
-      </h3>
-    </div>
+  <p>Please fill out this awesome form</p>
 
-    <div class="grid">
-      <div class="unit xs-1 s-1-2 m-1 l-1-2 ib push">
-        <label for="name">Name</label>
-        <input id="name" name="name" required aria-describedby="name-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
+  <div class="tab">
+    <button class="tablinks" onclick="openForm(event, 'London')">About You</button>
+    <button class="tablinks" onclick="openForm(event, 'Paris')">Your Lifestyle</button>
+    <button class="tablinks" onclick="openForm(event, 'Tokyo')">Pet Information</button>
+  </div>
+
+  <div id="London" class="tabcontent">
+    <form class="gutter-1-2 max-length form island-1-2 gutter-1-2" method="POST" novalidate>
+
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+          <span class="icon-label"> There are items that require your attention</span>
+        </h3>
       </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1-2 ib push">
-        <label for="options">Multiple Questions</label>
-        <select id="options" name="options" required aria-describedby="multiple-error">
-          <option value="">…</option>
-          <option value="Option-1">Option 1</option>
-          <option value="Option-2">Option 2</option>
-        </select>
-        <p class="error-message milli island-1-4 push-0" id="multiple-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
+      <div class="grid">
+        <div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
+          <label for="name">Name</label>
+          <input class="select-form" id="name" name="name" required aria-describedby="name-error">
+          <p class="error-message milli island-1-4 push-0" id="name-error">
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
+          <label for="options">Multiple Questions</label>
+          <select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
+            <option value="">…</option>
+            <option value="Option-1">Option 1</option>
+            <option value="Option-2">Option 2</option>
+          </select>
+          <p class="error-message milli island-1-4 push-0" id="multiple-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+          <label for="address">Address</label>
+          <textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="address-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+          <label for="email">Email</label>
+          <input class="select-form" id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
+          <p class="error-message milli island-1-4 push-0" id="email-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+          <label for="phone">Phone</label>
+          <input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
+          <p class="error-message milli island-1-4 push-0" id="phone-error">
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+          <label for="home">Phone Home</label>
+          <input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
+          <p class="error-message milli island-1-4 push-0" id="home-error">
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
       </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1 ib push">
-        <label for="address">Address</label>
-        <textarea id="address" name="Address" required aria-describedby="address-error"></textarea>
-        <p class="error-message milli island-1-4 push-0" id="address-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
+      <p>Radio Button</p>
+      <input type="radio" id="yes" name="option" required aria-describedby="button-error">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="option" required aria-describedby="button-error">
+      <label for="no">No</label>
+      <p class="error-message milli island-1-4 push-0" id="button-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+        <span class="icon-label">Please provide a properly formatted email address</span>
+      </p>
+
+      <div class="pad-t-1-2">
+        <button class="btn" type="submit">Send</button>
       </div>
+    </form>
+  </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1 ib push">
-        <label for="email">Email</label>
-        <input id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
-        <p class="error-message milli island-1-4 push-0" id="email-error">
-          <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
-      </div>
+  <div id="Paris" class="tabcontent">
+    <h3>Tell us about yourself</h3>
+    <p>Who you are</p>
+  </div>
 
-      <div class="unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" required aria-describedby="phone-error">
-        <p class="error-message milli island-1-4 push-0" id="phone-error">
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
-      </div>
+  <div id="Tokyo" class="tabcontent">
+    <h3>Information on the pet you want to adopt</h3>
+    <p>Who is the little guy you want to adopt</p>
+  </div>
 
-      <div class="unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-        <label for="home">Phone Home</label>
-        <input id="home" name="home" required aria-describedby="home-error">
-        <p class="error-message milli island-1-4 push-0" id="home-error">
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
-      </div>
-
-    </div>
-
-    <p>Radio Button</p>
-    <input type="radio" id="yes" name="option" required aria-describedby="button-error">
-    <label for="yes">Yes</label>
-    <input type="radio" id="no" name="option" required aria-describedby="button-error">
-    <label for="no">No</label>
-    <p class="error-message milli island-1-4 push-0" id="button-error">
-      <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-      <span class="icon-label">Please provide a properly formatted email address</span>
-    </p>
-
-    <div class="pad-t-1-2">
-      <button class="btn" type="submit">Send</button>
-    </div>
-  </form>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script>
+function openForm(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
 </html>

@@ -6,15 +6,15 @@
 }
 
 .cards {
-  background-color: #e0e0e0;
+  background-color: var(--color-grey-light);
 }
 
 .card-icon {
-  background-color: #ccc;
+  background-color: var(--color-grey-light);
   border-radius: 8px;
 }
 
-.s-1 {
+.card-adoption .s-1 {
   align-items: center;
   text-align: center;
 }
@@ -24,6 +24,10 @@
 }
 
 .card-adoption {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-grey-light);
   border-radius: 8px;
+}
+
+.dog {
+  width: 70%;
 }
