@@ -145,7 +145,7 @@ select {
 
       height: 200px;
 
-      background-attachment: fixed;
+      background-attachment: scroll;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -154,6 +154,28 @@ select {
 }
 
 @media only screen and (min-width: 38em) {
+
+  .parallax {
+      background-image: url("../../images/dog-8.jpg");
+
+      height: 300px;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .parallax-1 {
+      background-image: url("../../images/dog-11.jpg");
+
+      height: 400px;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
 
 }
 
