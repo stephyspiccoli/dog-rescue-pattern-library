@@ -59,4 +59,9 @@
     font-size: 4em;
   }
 
+  .card-banner {
+    position: absolute;
+    top: 50%;
+  }
+
 }
