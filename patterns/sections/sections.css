@@ -132,6 +132,8 @@ select {
 
   .adopt-title {
     font-size: 2em;
+    left: 0;
+    top: 55%;
   }
 }
 
@@ -153,7 +155,7 @@ select {
   .adopt-title {
     font-size: 3em;
     left: 0;
-    top: 300px;
+    top: 75%;
     transform: translateX(-50%);
     transform: translateY(-50%);
   }
