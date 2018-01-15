@@ -42,128 +42,190 @@
 
   <main>
 
-    <input id="tab1" type="radio" name="tabs" checked>
-    <label class="island-1-2" for="tab1">About You</label>
+    <div class="tab">
+      <button class="tablinks" onclick="openDog(event, 'London')" id="defaultOpen">Personal Information</button>
+      <button class="tablinks" onclick="openDog(event, 'Paris')" id="tab-2">Home Information</button>
+      <button class="tablinks" onclick="openDog(event, 'Sao Paulo')">Submit</button>
+    </div>
 
-    <input id="tab2" type="radio" name="tabs">
-    <label class="island-1-2" for="tab2">Personal Information</label>
+    <div id="London" class="tabcontent">
+      <h4 class="gutter-1-2 pad-t-1-2">Tell us a little bit about yourself</h4>
+        <form class="gutter-1-2 form island-1-2 gutter-1-2" method="POST" novalidate>
 
-    <input id="tab3" type="radio" name="tabs">
-    <label class="island-1-2" for="tab3">Dropbox</label>
+          <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+            <h3 class="push-0">
+              <span class="icon-label"> There are items require your attention</span>
+            </h3>
+          </div>
 
-    <input id="tab4" type="radio" name="tabs">
-    <label class="island-1-2" for="tab4">Almost There</label>
+          <div class="grid">
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="name">First & Last name</label>
+              <input class="select-form" id="name" name="name" required aria-describedby="name-error">
+              <p class="error-message milli island-1-4 push-0" id="name-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
 
-    <section class="section-form" id="content1">
-      <form class="gutter-1-2 max-length form island-1-2 gutter-1-2" method="POST" novalidate>
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="name">Age</label>
+              <input class="select-form" id="name" name="name" required aria-describedby="name-error">
+              <p class="error-message milli island-1-4 push-0" id="name-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
 
-        <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-          <h3 class="push-0">
-            <span class="icon-label"> There are items require your attention</span>
-          </h3>
+            <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+              <label class="" for="address">Full Address</label>
+              <textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error"></textarea>
+              <p class="error-message milli island-1-4 push-0" id="address-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+              <label for="email">Email</label>
+              <input class="select-form" id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
+              <p class="error-message milli island-1-4 push-0" id="email-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="phone">Phone</label>
+              <input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
+              <p class="error-message milli island-1-4 push-0" id="phone-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="home">Phone Home</label>
+              <input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
+              <p class="error-message milli island-1-4 push-0" id="home-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+          </div>
+
+          <h3>Terms</h3>
+          <div class="push-2">
+            <div class="">
+              <p class="milli push-1-2">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+              <p class="milli push-1-2">I understand that LOYAL Rescue does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+              <p class="milli push-1-2">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue website and continue with my application screening.</p>
+              <p class="milli push-1-2">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+            </div>
+            <div class="pad-t-1-4">
+              <input type="checkbox" id="terms">
+              <label for="terms">I agree to the terms and conditions</label>
+            </div>
+          </div>
+
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h4 class="gutter-1-2 pad-t-1-2">Tell us a little bit about yourself</h4>
+        <form class="gutter-1-2 form island-1-2 gutter-1-2" method="POST" novalidate>
+
+          <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+            <h3 class="push-0">
+              <span class="icon-label"> There are items require your attention</span>
+            </h3>
+          </div>
+
+          <div class="grid">
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 push">
+              <label for="options">Home Style</label>
+              <select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
+                <option value="">…</option>
+                <option value="Option-1">House</option>
+                <option value="Option-2">Semi-detach</option>
+                <option value="Option-3">Townhouse</option>
+                <option value="Option-4">Mobile Home</option>
+                <option value="Option-4">Other</option>
+              </select>
+              <p class="error-message milli  push-0" id="multiple-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="email">If other please describe</label>
+              <input class="select-form" id="email" name="email" required aria-describedby="email-error">
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="options">Do you:</label>
+              <select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
+                <option value="">…</option>
+                <option value="Option-1">Rent</option>
+                <option value="Option-2">Own</option>
+                <option value="Option-3">Other</option>
+              </select>
+              <p class="error-message milli  push-0" id="multiple-error">
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-2 ib push">
+              <label for="email">If other please describe</label>
+              <input class="select-form" id="email" name="email" required aria-describedby="email-error">
+            </div>
+
+
+            <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+              <label for="phone">Cell Phone</label>
+              <input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
+              <p class="error-message milli island-1-4 push-0" id="phone-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+            <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+              <label for="home">Home Phone</label>
+              <input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
+              <p class="error-message milli island-1-4 push-0" id="home-error">
+                <span class="icon-label">Please provide a properly formatted email address</span>
+              </p>
+            </div>
+
+          </div>
         </div>
 
-        <div class="grid">
-          <div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
-            <label for="name">Name</label>
-            <input class="select-form" id="name" name="name" required aria-describedby="name-error">
-            <p class="error-message milli island-1-4 push-0" id="name-error">
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
+        </form>
 
-          <div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
-            <label for="options">Multiple Questions</label>
-            <select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
-              <option value="">…</option>
-              <option value="Option-1">Option 1</option>
-              <option value="Option-2">Option 2</option>
-            </select>
-            <p class="error-message milli  push-0" id="multiple-error">
-              <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
-
-          <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
-            <label class="" for="address">Address</label>
-            <textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error"></textarea>
-            <p class="error-message milli island-1-4 push-0" id="address-error">
-              <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
-
-          <div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
-            <label for="email">Email</label>
-            <input class="select-form" id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
-            <p class="error-message milli island-1-4 push-0" id="email-error">
-              <i class="icon i-16"><svg><use xlink:href="../../images/icons-error.svg#error" /></svg></i>
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
-
-          <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-            <label for="phone">Phone</label>
-            <input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
-            <p class="error-message milli island-1-4 push-0" id="phone-error">
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
-
-          <div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-            <label for="home">Phone Home</label>
-            <input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
-            <p class="error-message milli island-1-4 push-0" id="home-error">
-              <span class="icon-label">Please provide a properly formatted email address</span>
-            </p>
-          </div>
-
-        </div>
-      </form>
-    </section>
-
-    <section class="section-form" id="content2">
-      <p>
-        Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
-      </p>
-      <p>
-        Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
-      </p>
-    </section>
-
-    <section class="section-form" id="content3">
-      <p>
-        Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-      </p>
-      <p>
-        Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-      </p>
-    </section>
-
-    <section class="section-form" id="content4">
-      <div class="max-length pad-t-1-2 push-2">
+    <div id="Sao Paulo" class="tabcontent">
+      <h3>You're almost there</h3>
+      <div class="push-2">
         <div class="">
-          <p class="push-1-2">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
-          <p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
-          <p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+          <p class="push-1-2">I certify that the information provided on this form is true and correct and that nothing of relevance has been omitted. I realize that if any of the information I have provided is inaccurate, misleading, or significant omissions have been made, this may result in my application being denied. </p>
+          <p class="push-1-2">I grant my permission for a LOYAL Rescue volunteer to contact all stated personal references and veterinarian(s).
+
+I am financially and physically able to care for this animal. I understand that proper food, water, shelter, and veterinary care is necessary and may be costly, and I am able to meet these requirements. </p>
+          <p class="push-1-2">I am aware that Home Visits are mandatory prior to approval for ALL applicants and are also made on a random basis following adoption.
+
+If, even after an adoption has taken place, it is discovered that information contained in this application is false or misleading, LOYAL Rescue retains the right to deny your application or remove the animal from your premises without a refund of monies paid. </p>
         </div>
-
-        <div class="push-1-2 pad-t-2">
-          <input type="radio" name="fieldset-4" id="radio4-example-three"/>
-           <label for="radio4-example-three">I agree to the terms and conditions.</label>
+        <div class="pad-t-1-4">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the terms and conditions</label>
         </div>
-
-        <div class="island-1-4 pad-t-2">
-          <a href="home-page.html" class="btn" type="submit">Send</a>
-        </div>
-
-      </form>
-
-  </main>
+      </div>
+    </div>
 
 
   </form>
+</main>
 
   <footer class="footer" id="footer" role="contentinfo">
     <h3 class="text-center pad-t-1-4">Contact us</h3>
@@ -186,23 +248,24 @@
     <p class="push-0 text-center micro">Piccoli Designs © <i>Loyal Rescue</i>, 2016</p>
   </footer>
 
-  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
   <script>
-function openForm(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+  function openDog(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
 
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
 
 </body>
 </html>

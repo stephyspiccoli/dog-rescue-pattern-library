@@ -1058,6 +1058,7 @@
             <li><a href="#forms-dropdown">Dropdown</a></li>
             <li><a href="#forms-form-application">Form application</a></li>
             <li><a href="#forms-form-example">Form example</a></li>
+            <li><a href="#forms-tabs">Tabs</a></li>
         </ol>
       </nav>
   </div>
@@ -1289,133 +1290,157 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="forms-form-example-code-sample-copy-chunk">&lt;main&gt;
+              <code><pre id="forms-form-example-code-sample-copy-chunk">&lt;h4 class="gutter-1-2 pad-t-1-2"&gt;Tell us a little bit about yourself&lt;/h4>
+&lt;form class="gutter-1-2 form island-1-2 gutter-1-2" method="POST" novalidate="">
 
-  &lt;input id="tab1" type="radio" name="tabs" checked>
-  &lt;label class="island-1-2" for="tab1">About You&lt;/label>
-
-  &lt;input id="tab2" type="radio" name="tabs">
-  &lt;label class="island-1-2" for="tab2">Personal Information&lt;/label>
-
-  &lt;input id="tab3" type="radio" name="tabs">
-  &lt;label class="island-1-2" for="tab3">Dropbox&lt;/label>
-
-  &lt;input id="tab4" type="radio" name="tabs">
-  &lt;label class="island-1-2" for="tab4">Drupal&lt;/label>
-
-  &lt;section class="section-form" id="content1">
-    &lt;form class="gutter-1-2 max-length form island-1-2 gutter-1-2" method="POST" novalidate="">
-
-      &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-        &lt;h3 class="push-0">
+  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+    &lt;h3 class="push-0">
           &lt;span class="icon-label"> There are items require your attention&lt;/span>
         &lt;/h3>
-      &lt;/div>
+  &lt;/div>
 
-      &lt;div class="grid">
-        &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
-          &lt;label for="name">Name&lt;/label>
-          &lt;input class="select-form" id="name" name="name" required aria-describedby="name-error">
-          &lt;p class="error-message milli island-1-4 push-0" id="name-error">
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-        &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
-          &lt;label for="options">Multiple Questions&lt;/label>
-          &lt;select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
-            &lt;option value="">&#x2026;&lt;/option>
-            &lt;option value="Option-1">Option 1&lt;/option>
-            &lt;option value="Option-2">Option 2&lt;/option>
-          &lt;/select>
-          &lt;p class="error-message milli  push-0" id="multiple-error">
-            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-        &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
-          &lt;label for="address">Address&lt;/label>
-          &lt;textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error">&lt;/textarea>
-          &lt;p class="error-message milli island-1-4 push-0" id="address-error">
-            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-        &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
-          &lt;label for="email">Email&lt;/label>
-          &lt;input class="select-form" id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
-          &lt;p class="error-message milli island-1-4 push-0" id="email-error">
-            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-        &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-          &lt;label for="phone">Phone&lt;/label>
-          &lt;input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
-          &lt;p class="error-message milli island-1-4 push-0" id="phone-error">
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-        &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
-          &lt;label for="home">Phone Home&lt;/label>
-          &lt;input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
-          &lt;p class="error-message milli island-1-4 push-0" id="home-error">
-            &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-          &lt;/p>
-        &lt;/div>
-
-      &lt;/div>
-
-      &lt;div class="island-1-4 pad-t-1-2">
-        &lt;button class="btn" type="submit">Send&lt;/button>
-      &lt;/div>
-    &lt;/form>
-  &lt;/section>
-
-  &lt;section class="section-form" id="content2">
-    &lt;p>
-      Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
-    &lt;/p>
-    &lt;p>
-      Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
-    &lt;/p>
-  &lt;/section>
-
-  &lt;section class="section-form" id="content3">
-    &lt;p>
-      Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-    &lt;/p>
-    &lt;p>
-      Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-    &lt;/p>
-  &lt;/section>
-
-  &lt;section class="section-form" id="content4">
-    &lt;div class="max-length pad-t-1-2 push-2">
-      &lt;div>
-        &lt;p class="push-1-2">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.&lt;/p>
-        &lt;p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/p>
-        &lt;p class="push-1-2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a &quot;first come first serve&quot; basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.&lt;/p>
-      &lt;/div>
-
-      &lt;div>
-        &lt;input type="radio" name="fieldset-4" id="radio4-example-three">
-        &lt;label for="radio4-example-three">I agree to the terms and conditions.&lt;/label>
-      &lt;/div>
-
-      &lt;div class="island-1-4 pad-t-1-2">
-        &lt;a href="#" class="btn" type="submit">Send&lt;/a>
-      &lt;/div>
-
-
-
+  &lt;div class="grid">
+    &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
+      &lt;label for="name">Name&lt;/label>
+      &lt;input class="select-form" id="name" name="name" required aria-describedby="name-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
     &lt;/div>
-  &lt;/section>
-&lt;/main>
+
+    &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1-2 ib push">
+      &lt;label for="options">Multiple Questions&lt;/label>
+      &lt;select class="select-form select-arrow" id="options" name="options" required aria-describedby="multiple-error">
+        &lt;option value="">&#x2026;&lt;/option>
+        &lt;option value="Option-1">Option 1&lt;/option>
+        &lt;option value="Option-2">Option 2&lt;/option>
+      &lt;/select>
+      &lt;p class="error-message milli  push-0" id="multiple-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+      &lt;label for="address">Address&lt;/label>
+      &lt;textarea class="select-form-full" id="address" name="Address" required aria-describedby="address-error">&lt;/textarea>
+      &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="island-1-4 unit xs-1 s-1 m-1 l-1 ib push">
+      &lt;label for="email">Email&lt;/label>
+      &lt;input class="select-form" id="email" name="email" placeholder="me@me.com" required aria-describedby="email-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons-error.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+      &lt;label for="phone">Phone&lt;/label>
+      &lt;input class="select-form-side" id="phone" name="phone" required aria-describedby="phone-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="phone-error">
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="island-1-4 unit xs-1 s-1-2 m-1-2 l-1-2 ib push">
+      &lt;label for="home">Phone Home&lt;/label>
+      &lt;input class="select-form-side" id="home" name="home" required aria-describedby="home-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="home-error">
+        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+  &lt;/div>
+
+  &lt;div class="island-1-4 pad-t-1-2">
+    &lt;button class="btn" type="submit">Send&lt;/button>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-tabs" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Tabs</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="forms-tabs-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/forms/tabs.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/forms/tabs.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="forms-tabs-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#forms-tabs-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="forms-tabs-code-sample-copy-chunk">&lt;p class="max-length"&gt;In this example, is where the form will be contaning different sections where the costumer has to fill out in order to adopt a puppy or kitten&lt;/p>
+
+&lt;div class="tab">
+  &lt;button class="tablinks" id="defaultOpen">Personal Information&lt;/button>
+  &lt;button class="tablinks">Home Information&lt;/button>
+  &lt;button class="tablinks">Pet Information&lt;/button>
+  &lt;button class="tablinks">Submit&lt;/button>
+&lt;/div>
+
+&lt;div id="London" class="tabcontent">
+  &lt;h3>Info 1&lt;/h3>
+  &lt;p>Personal Info will goes here&lt;/p>
+&lt;/div>
+
+&lt;div id="Paris" class="tabcontent">
+  &lt;h3>Info 2&lt;/h3>
+  &lt;p>Home information will go here&lt;/p>
+&lt;/div>
+
+&lt;div id="Tokyo" class="tabcontent">
+  &lt;h3>Info 3&lt;/h3>
+  &lt;p>Pet Information&lt;/p>
+&lt;/div>
+
+&lt;div id="Sao Paulo" class="tabcontent">
+  &lt;h3>Info 4&lt;/h3>
+  &lt;p>Submit form&lt;/p>
+&lt;/div>
 </pre></code>
             </div>
           </div>

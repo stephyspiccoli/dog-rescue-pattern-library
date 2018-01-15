@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
+</head>
+<body>
+
+  <p class="max-length">In this example, is where the form will be contaning different sections where the costumer has to fill out in order to adopt a puppy or kitten</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openDog(event, 'London')" id="defaultOpen">Personal Information</button>
+  <button class="tablinks" onclick="openDog(event, 'Paris')">Home Information</button>
+  <button class="tablinks" onclick="openDog(event, 'Tokyo')">Pet Information</button>
+  <button class="tablinks" onclick="openDog(event, 'Sao Paulo')">Submit</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Info 1</h3>
+  <p>Personal Info will goes here</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Info 2</h3>
+  <p>Home information will go here</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Info 3</h3>
+  <p>Pet Information</p>
+</div>
+
+<div id="Sao Paulo" class="tabcontent">
+  <h3>Info 4</h3>
+  <p>Submit form</p>
+</div>
+
+<script>
+function openDog(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
