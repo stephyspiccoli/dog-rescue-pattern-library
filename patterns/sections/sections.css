@@ -10,7 +10,7 @@
 }
 
 .parallax-1 {
-    background-image: url("../../images/dog-11.jpg");
+    background-image: url("../../images/dog-parallex.jpg");
 
     height: 400px;
 
@@ -112,6 +112,17 @@ select {
 }
 
 
+@media only screen and (max-device-width: 1024px) {
+  .parallex-1 {
+    background-attachment: scroll;
+    height: 100vh;
+  }
+
+  .title {
+    letter-spacing: inherit;
+  }
+}
+
 
 @media only screen and (min-width: 25em) {
 
@@ -129,16 +140,6 @@ select {
     border-radius: 8px;
   }
 
-
-  .adopt-title {
-    position: absolute;
-    color: var(--color-grey-light);
-    width: 100%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 65%;
-    font-size: 2em;
-  }
 }
 
 @media only screen and (min-width: 38em) {
