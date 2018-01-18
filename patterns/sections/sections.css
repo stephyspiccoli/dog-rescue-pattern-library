@@ -30,8 +30,16 @@ figure {
   width: 70%;
 }
 
+.banner p{
+ color: var(--color-white);
+}
+
 .happy {
   background-color: var(--color-grey-light);
+}
+
+.banner-picture {
+
 }
 
 figcaption {
@@ -40,6 +48,10 @@ figcaption {
 
 .dogs {
   width: 50%;
+}
+
+.banner-image {
+
 }
 
 /* Adoption page */
@@ -135,6 +147,11 @@ select {
     left: 0;
     top: 55%;
   }
+
+  .banner-image {
+    height: cover;
+  }
+
 }
 
 @media only screen and (min-width: 320px) {
@@ -190,7 +207,6 @@ select {
 }
 
 @media only screen and (min-width: 60em) {
-
 
 }
 
