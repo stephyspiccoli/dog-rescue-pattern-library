@@ -14,6 +14,15 @@
   <link href="common.min.css" rel="stylesheet">
   <link href="brand.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
+  <style>
+    :root {
+        --font-patternbot-primary: "PT Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+      html {
+        font-family: "PT Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
+  </style>
     <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700|PT+Sans:400,400i,700" rel="stylesheet">
 </head>
 <body>
@@ -37,14 +46,14 @@
         </div>
 
       <div class="patternbot-color-swatches patternbot-color-swatches-primary grid grid-stretch">
-        <div class="unit xs-1-2" style="background-color:var(--color-primary)">&nbsp;</div>
-        <div class="patternbot-color-swatches-fill unit xs-1-2" style="background-color:var(--color-primary)">
+        <div class="unit xs-1-2" style="background-color:var(--color-primary, var(--color-primary))">&nbsp;</div>
+        <div class="patternbot-color-swatches-fill unit xs-1-2" style="background-color:var(--color-primary, var(--color-primary))">
             <div style="background-color:var(--color-primary);">&nbsp;</div>
             <div style="background-color:var(--color-primary-light);">&nbsp;</div>
         </div>
       </div>
 
-      <ul class="patterbot-color-swatch-labels patternbot-color-body patternbot-list-group list-group-inline milli pad-t-1-2 push-0">
+      <ul class="patternbot-color-swatch-labels patternbot-color-body patternbot-list-group list-group-inline milli pad-t-1-2 push-0">
           <li class="push">
             <div class="push-1-2">
               <i class="patternbot-color-swatches icon i-24" style="background-color:var(--color-primary);">&nbsp;</i>
@@ -59,8 +68,8 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#d99728</code></li>
-              <li><code>rgba(217, 151, 40, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#d99728</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(217, 151, 40, 1)</code></li>
             </ul>
           </li>
           <li class="push">
@@ -77,19 +86,19 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#fdba18</code></li>
-              <li><code>rgba(253, 186, 24, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#fdba18</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(253, 186, 24, 1)</code></li>
             </ul>
           </li>
       </ul>
     </section>
 
 
-    <section class="pad-t">
+    <section>
       <hr class="patternbot-hr">
 
       <h2 class="patternbot-color-body giga ">Accent colours</h2>
-      <ul class="patterbot-color-swatch-labels patternbot-color-body patternbot-list-group list-group-inline milli push-0">
+      <ul class="patternbot-color-swatch-labels patternbot-color-body patternbot-list-group list-group-inline milli push-0">
           <li class="push">
             <div class="patternbot-color-swatches patternbot-color-swatches-accent push-1-2" style="background-color:var(--color-regular);">&nbsp;</div>
             <div class="push-1-2">
@@ -105,8 +114,8 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#686868</code></li>
-              <li><code>rgba(104, 104, 104, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#686868</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(104, 104, 104, 1)</code></li>
             </ul>
           </li>
           <li class="push">
@@ -124,8 +133,8 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#fff</code></li>
-              <li><code>rgba(255, 255, 255, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#fff</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(255, 255, 255, 1)</code></li>
             </ul>
           </li>
           <li class="push">
@@ -143,8 +152,8 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#000</code></li>
-              <li><code>rgba(0, 0, 0, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#000</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(0, 0, 0, 1)</code></li>
             </ul>
           </li>
           <li class="push">
@@ -162,8 +171,8 @@
                   </i>
                 </button>
               </li>
-              <li class="push-1-8"><code>#efefef</code></li>
-              <li><code>rgba(239, 239, 239, 1)</code></li>
+              <li class="patternbot-color-swatch-labels-hex push-1-8"><code>#efefef</code></li>
+              <li class="patternbot-color-swatch-labels-rgba"><code>rgba(239, 239, 239, 1)</code></li>
             </ul>
           </li>
       </ul>
